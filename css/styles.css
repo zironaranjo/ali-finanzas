@@ -335,9 +335,9 @@ input, textarea { font-family: inherit; }
   z-index: 1;
   background: linear-gradient(
     105deg,
-    rgba(10, 25, 18, 0.82) 0%,
-    rgba(15, 36, 25, 0.65) 45%,
-    rgba(10, 25, 18, 0.25) 100%
+    rgba(10, 25, 18, 0.55) 0%,
+    rgba(15, 36, 25, 0.30) 50%,
+    rgba(10, 25, 18, 0.05) 100%
   );
 }
 
