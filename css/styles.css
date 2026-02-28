@@ -334,7 +334,12 @@ input, textarea { font-family: inherit; }
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: none;
+  background: linear-gradient(
+    100deg,
+    rgba(8, 20, 14, 0.78) 0%,
+    rgba(8, 20, 14, 0.58) 46%,
+    rgba(8, 20, 14, 0.26) 100%
+  );
 }
 
 .hero-container {
@@ -342,7 +347,7 @@ input, textarea { font-family: inherit; }
   z-index: 2;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 160px 24px 60px;
+  padding: 200px 24px 60px;
   width: 100%;
 }
 
@@ -1651,7 +1656,7 @@ input, textarea { font-family: inherit; }
 
 @media (max-width: 768px) {
   .hero-bg-img {
-    object-position: 72% center;
+    object-position: 58% center;
   }
 
   /* Hero mobile: overlay oscuro para legibilidad */
