@@ -1747,8 +1747,8 @@ input, textarea { font-family: inherit; }
   }
 
   .testimonial-card {
-    min-width: calc(78vw);
-    padding: 24px 20px;
+    min-width: calc(72vw);
+    padding: 20px 16px;
   }
 
   .testimonials-track {
@@ -1788,8 +1788,13 @@ input, textarea { font-family: inherit; }
   .stat-divider { width: 40px; height: 1px; }
   .stat-number { font-size: 1.5rem; }
   .testimonial-card {
-    min-width: calc(84vw);
-    padding: 20px 18px;
+    min-width: calc(76vw);
+    padding: 18px 14px;
+  }
+
+  .testimonial-card p {
+    font-size: 0.88rem;
+    line-height: 1.6;
   }
 }
 
