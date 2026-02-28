@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ali Finanzas – Asesoría Financiera | Finanzberatung</title>
+  <meta name="description" content="Ali Martínez – Asesora financiera. Ahorra más, invierte mejor y alcanza tu libertad financiera. Asesoría personalizada en español y alemán." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">AF</span>
+        <span class="logo-text">Ali<strong>Finanzas</strong></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li>
+          <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="es">ES</button>
+            <span>|</span>
+            <button class="lang-btn" data-lang="de">DE</button>
+          </div>
+        </li>
+      </ul>
+      <a href="#formulario" class="btn btn-nav">Consulta gratuita</a>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">Asesoría Financiera Personal</div>
+        <h1 class="hero-title">
+          <span class="hero-static">Ahorra un 20%,</span>
+          <span class="hero-animated-wrap">sin renunciar a
+            <span class="hero-words">
+              <span class="word active">tu estilo de vida</span>
+              <span class="word">tus caprichos</span>
+              <span class="word">lo que amas</span>
+              <span class="word">tu comodidad</span>
+            </span>
+          </span>
+        </h1>
+        <p class="hero-subtitle">
+          Descubre cómo hacer que tu dinero trabaje de forma <strong>inteligente y sostenible</strong> para ti.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#formulario" class="btn btn-primary btn-large">
+            Reservar asesoría gratuita
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number" data-target="8">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Años de experiencia</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number" data-target="2">0</span><span class="stat-suffix"> Mio.+</span>
+            <span class="stat-label">Activos gestionados</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number" data-target="150">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Clientes satisfechos</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-image-bg"></div>
+        <img src="assets/images/ali-hero.png" alt="Ali Martínez – Asesora Financiera" class="hero-img" />
+        <div class="hero-card floating-card card-1">
+          <div class="card-icon">💰</div>
+          <div>
+            <div class="card-title">Ahorro mensual</div>
+            <div class="card-value">+€450 / mes</div>
+          </div>
+        </div>
+        <div class="hero-card floating-card card-2">
+          <div class="card-icon">📈</div>
+          <div>
+            <div class="card-title">Rentabilidad media</div>
+            <div class="card-value">8–12% anual</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Descubre más</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===== PAIN POINTS ===== -->
+  <section class="pain-points" id="problemas">
+    <div class="container">
+      <div class="section-label">¿Te identificas?</div>
+      <h2 class="section-title">¿Te suenan estas situaciones?</h2>
+      <div class="pain-grid">
+        <div class="pain-card reveal">
+          <div class="pain-icon">💸</div>
+          <h3>Sin dinero a fin de mes</h3>
+          <p>Tu sueldo se evapora entre facturas y gastos cotidianos y no queda nada para ahorrar.</p>
+        </div>
+        <div class="pain-card reveal">
+          <div class="pain-icon">🎯</div>
+          <h3>Sin metas de ahorro</h3>
+          <p>Quieres ahorrar para objetivos importantes pero no sabes por dónde empezar ni cómo lograrlo.</p>
+        </div>
+        <div class="pain-card reveal">
+          <div class="pain-icon">😰</div>
+          <h3>Inseguridad financiera</h3>
+          <p>Un gasto inesperado te genera estrés y angustia porque no tienes colchón de seguridad.</p>
+        </div>
+        <div class="pain-card reveal">
+          <div class="pain-icon">📊</div>
+          <h3>Quiero invertir, pero ¿cómo?</h3>
+          <p>Sabes que deberías invertir tu dinero, pero la falta de conocimiento te paraliza.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="sobre-mi">
+    <div class="container about-container">
+      <div class="about-image-wrap reveal">
+        <img src="assets/images/ali-hero.png" alt="Ali Martínez" class="about-img" />
+        <div class="about-badge">
+          <span>🏆</span>
+          <div>
+            <strong>Certificada EFPA</strong>
+            <span>Planificadora Financiera</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-content reveal">
+        <div class="section-label">Sobre mí</div>
+        <h2 class="section-title">Tu camino hacia la libertad financiera</h2>
+        <p class="about-text">
+          Soy Ali Martínez, asesora financiera con más de <strong>8 años de experiencia</strong> ayudando a personas como tú a transformar su relación con el dinero. Desarrollo estrategias adaptadas a tu situación para que puedas ahorrar de forma sostenible, construir una reserva financiera y planificar tu futuro con confianza.
+        </p>
+        <ul class="about-benefits">
+          <li>
+            <div class="benefit-icon">✓</div>
+            <div>
+              <strong>Enfoque individual</strong>
+              <span>Basado en tus ingresos, gastos y metas personales</span>
+            </div>
+          </li>
+          <li>
+            <div class="benefit-icon">✓</div>
+            <div>
+              <strong>Pasos simples y efectivos</strong>
+              <span>Sin jerga financiera, todo explicado con claridad</span>
+            </div>
+          </li>
+          <li>
+            <div class="benefit-icon">✓</div>
+            <div>
+              <strong>Acompañamiento continuo</strong>
+              <span>Seguimiento regular para que alcances tus objetivos</span>
+            </div>
+          </li>
+        </ul>
+        <a href="#formulario" class="btn btn-primary">Reservar asesoría ahora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" id="testimonios">
+    <div class="container">
+      <div class="section-label">Opiniones reales</div>
+      <h2 class="section-title">Personas reales, resultados reales</h2>
+      <p class="section-subtitle">Experiencias de clientes a los que he acompañado en su camino hacia el éxito financiero.</p>
+
+      <div class="testimonials-track-wrap">
+        <div class="testimonials-track" id="testimonialsTrack">
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Ali fue transparente, honesta y paciente. Analizó mi situación financiera y me mostró soluciones que realmente se adaptan a mis posibilidades."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">S</div>
+              <div>
+                <strong>Sofía Ramírez</strong>
+                <span>Madrid</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Soy cliente de Ali desde enero de 2024. Se tomó todo el tiempo necesario para explicarme cada producto, y los rendimientos de mis planes de ahorro son increíbles, entre un 7 y 12% anual."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">C</div>
+              <div>
+                <strong>Carlos Fuentes</strong>
+                <span>Barcelona</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Ali me ayudó a optimizar mis seguros y crear un plan de ahorro. Competente, apasionada y muy comprometida con mis objetivos."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">L</div>
+              <div>
+                <strong>Laura Gómez</strong>
+                <span>Valencia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Ali es una asesora fantástica que siempre responde rápido, da consejos muy útiles y tiene todo perfectamente organizado. ¡Muy recomendable!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">M</div>
+              <div>
+                <strong>Marcos Ibáñez</strong>
+                <span>Sevilla</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Al principio tenía dudas, pero Ali me ayudó a detectar un error en mis cotizaciones y ahorramos juntos bastante dinero. ¡Muy agradecida!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">P</div>
+              <div>
+                <strong>Patricia Molina</strong>
+                <span>Bilbao</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Me siento muy bien asesorada con Ali Martínez. Es muy competente, explica todo de manera comprensible y siempre tiene tiempo para mis preguntas. ¡Totalmente recomendable!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">E</div>
+              <div>
+                <strong>Elena Herrero</strong>
+                <span>Zaragoza</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Estoy muy satisfecho con Ali como asesora financiera. Explica todo con claridad y siempre tiene tiempo para mis preguntas. ¡Totalmente recomendable!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">J</div>
+              <div>
+                <strong>Javier Ruiz</strong>
+                <span>Málaga</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Ali es una asesora de primera, competente, honesta y muy fiable. Explicaciones claras y un asesoramiento excelente donde uno se siente en buenas manos desde el primer momento."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">R</div>
+              <div>
+                <strong>Rosa Navarro</strong>
+                <span>Alicante</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="testimonials-controls">
+        <button class="testimonial-btn" id="testimPrev" aria-label="Anterior">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        </button>
+        <div class="testimonial-dots" id="testimDots"></div>
+        <button class="testimonial-btn" id="testimNext" aria-label="Siguiente">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+      <div class="testimonials-cta">
+        <a href="#formulario" class="btn btn-primary">Reservar asesoría gratuita</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VIDEO TESTIMONIALS ===== -->
+  <section class="video-testimonials" id="videos">
+    <div class="container">
+      <div class="section-label">En sus propias palabras</div>
+      <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+      <p class="section-subtitle">Experiencias reales en vídeo</p>
+      <div class="video-grid">
+        <div class="video-card reveal">
+          <div class="video-thumb">
+            <div class="play-btn">▶</div>
+            <div class="video-name">Sofía R.</div>
+          </div>
+        </div>
+        <div class="video-card reveal">
+          <div class="video-thumb">
+            <div class="play-btn">▶</div>
+            <div class="video-name">Carlos F.</div>
+          </div>
+        </div>
+        <div class="video-card reveal">
+          <div class="video-thumb">
+            <div class="play-btn">▶</div>
+            <div class="video-name">Laura G.</div>
+          </div>
+        </div>
+        <div class="video-card reveal">
+          <div class="video-thumb">
+            <div class="play-btn">▶</div>
+            <div class="video-name">Marcos I.</div>
+          </div>
+        </div>
+        <div class="video-card reveal">
+          <div class="video-thumb">
+            <div class="play-btn">▶</div>
+            <div class="video-name">Patricia M.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section class="process" id="proceso">
+    <div class="container">
+      <div class="section-label">Así funciona</div>
+      <h2 class="section-title">Tu camino al éxito financiero, paso a paso</h2>
+      <p class="section-subtitle">Descubre cómo te acompaño desde el primer momento hasta alcanzar tus metas.</p>
+      <div class="process-grid">
+        <div class="process-step reveal">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Consulta inicial gratuita</h3>
+            <p>En una conversación personal analizo tus objetivos financieros y tu situación actual – en persona o cómodamente por videollamada.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Análisis y optimización</h3>
+            <p>Reviso tus ingresos, gastos e inversiones actuales para detectar todo el potencial de ahorro disponible en tu situación.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Plan financiero personalizado</h3>
+            <p>Recibes una estrategia a medida con recomendaciones concretas de ahorro e inversión adaptadas a tus metas.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3>Acompañamiento continuo</h3>
+            <p>Check-ins regulares y ajustes periódicos para que te sientas apoyado en cada fase del camino y alcances tus objetivos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq" id="faq">
+    <div class="container faq-container">
+      <div class="faq-header">
+        <div class="section-label">Preguntas frecuentes</div>
+        <h2 class="section-title">¿Tienes dudas?<br/>Aquí las respondemos</h2>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cuánto cuesta la asesoría?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>La primera consulta es completamente gratuita y sin compromiso. En función del análisis y los servicios que necesites, te presentaré un plan de honorarios transparente y adaptado a tu situación. Mi prioridad es que el valor que obtienes supere siempre lo que pagas.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Puedo confiar en tus consejos?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutamente. Trabajo con total transparencia y sin conflictos de interés. Mi único objetivo es tu bienestar financiero. Estoy certificada como Planificadora Financiera EFPA y sigo un estricto código de ética profesional. Además, los testimonios y resultados de mis clientes hablan por sí solos.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Qué pasa si el concepto no funciona para mí?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Cada estrategia que desarrollo está adaptada específicamente a tu situación. Si algo no funciona como esperábamos, lo ajustamos juntos. Mi acompañamiento continuo garantiza que siempre haya un plan B. No hay una solución única para todos.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cuánto tiempo tarda en verse resultados?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Muchos clientes notan mejoras desde el primer mes: más claridad sobre sus finanzas, reducción de gastos innecesarios y un plan claro de ahorro. Los resultados de inversión a largo plazo típicamente se consolidan en 12–24 meses, dependiendo de los objetivos marcados.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Ofrecéis asesoría en alemán?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sí, ofrezco asesoría tanto en español como en alemán. Puedes elegir el idioma con el que te sientas más cómodo para que la comunicación sea siempre clara y efectiva.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="cta-final">
+    <div class="container">
+      <div class="cta-final-content reveal">
+        <h2>¡Empieza hoy tu camino hacia la independencia financiera!</h2>
+        <p>Reserva una consulta gratuita y descubre cómo ahorrar e invertir tu dinero de forma fácil y efectiva, sin sacrificar tu calidad de vida.</p>
+        <a href="#formulario" class="btn btn-white btn-large">
+          Reservar asesoría gratuita
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MULTI-STEP FORM ===== -->
+  <section class="form-section" id="formulario">
+    <div class="container">
+      <div class="form-wrapper">
+        <div class="form-header">
+          <h2>Reserva tu asesoría gratuita</h2>
+          <p>Responde unas breves preguntas para que pueda preparar tu asesoría de forma óptima</p>
+        </div>
+
+        <div class="form-progress">
+          <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <span class="progress-text" id="progressText">Paso 1 de 6 · 17%</span>
+        </div>
+
+        <form id="multiStepForm">
+
+          <!-- STEP 1 -->
+          <div class="form-step active" data-step="1">
+            <h3>¿Ya ahorras mensualmente?</h3>
+            <p class="step-subtitle">¿Sabes cómo está trabajando tu dinero para ti?</p>
+            <div class="options-grid">
+              <label class="option-card">
+                <input type="radio" name="ahorro" value="si-regular" />
+                <span class="option-check"></span>
+                <span>Sí, ahorro regularmente</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="ahorro" value="si-irregular" />
+                <span class="option-check"></span>
+                <span>Sí, pero de forma irregular</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="ahorro" value="no" />
+                <span class="option-check"></span>
+                <span>No, todavía no</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="form-step" data-step="2">
+            <h3>¿Cuáles son tus principales metas financieras?</h3>
+            <p class="step-subtitle">Puedes seleccionar varias opciones</p>
+            <div class="options-grid">
+              <label class="option-card">
+                <input type="checkbox" name="metas" value="emergencia" />
+                <span class="option-check"></span>
+                <span>Fondo de emergencia</span>
+              </label>
+              <label class="option-card">
+                <input type="checkbox" name="metas" value="jubilacion" />
+                <span class="option-check"></span>
+                <span>Planificar la jubilación</span>
+              </label>
+              <label class="option-card">
+                <input type="checkbox" name="metas" value="invertir" />
+                <span class="option-check"></span>
+                <span>Empezar a invertir</span>
+              </label>
+              <label class="option-card">
+                <input type="checkbox" name="metas" value="deudas" />
+                <span class="option-check"></span>
+                <span>Saldar deudas</span>
+              </label>
+              <label class="option-card">
+                <input type="checkbox" name="metas" value="vivienda" />
+                <span class="option-check"></span>
+                <span>Comprar vivienda</span>
+              </label>
+              <label class="option-card">
+                <input type="checkbox" name="metas" value="otro" />
+                <span class="option-check"></span>
+                <span>Otro objetivo</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="form-step" data-step="3">
+            <h3>¿Cuánto te gustaría ahorrar al mes?</h3>
+            <p class="step-subtitle">Una estimación aproximada es suficiente</p>
+            <div class="options-grid">
+              <label class="option-card">
+                <input type="radio" name="importe" value="menos200" />
+                <span class="option-check"></span>
+                <span>Menos de €200</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="importe" value="200-500" />
+                <span class="option-check"></span>
+                <span>€200 – €500</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="importe" value="500-1000" />
+                <span class="option-check"></span>
+                <span>€500 – €1.000</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="importe" value="mas1000" />
+                <span class="option-check"></span>
+                <span>Más de €1.000</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- STEP 4 -->
+          <div class="form-step" data-step="4">
+            <h3>¿Tienes alguna inversión o seguro actualmente?</h3>
+            <p class="step-subtitle">Nos ayuda a entender tu punto de partida</p>
+            <div class="options-grid">
+              <label class="option-card">
+                <input type="radio" name="inversion" value="si" />
+                <span class="option-check"></span>
+                <span>Sí, tengo alguna inversión o seguro</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="inversion" value="no" />
+                <span class="option-check"></span>
+                <span>No, empiezo desde cero</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="inversion" value="nosé" />
+                <span class="option-check"></span>
+                <span>No estoy seguro/a</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- STEP 5 -->
+          <div class="form-step" data-step="5">
+            <h3>¿Cómo prefieres la primera reunión?</h3>
+            <p class="step-subtitle">Elegimos el formato más cómodo para ti</p>
+            <div class="options-grid">
+              <label class="option-card">
+                <input type="radio" name="reunion" value="online" />
+                <span class="option-check"></span>
+                <span>📹 Online (videollamada)</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="reunion" value="presencial" />
+                <span class="option-check"></span>
+                <span>🤝 Presencial</span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="reunion" value="telefono" />
+                <span class="option-check"></span>
+                <span>📞 Por teléfono</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- STEP 6 (FINAL) -->
+          <div class="form-step" data-step="6">
+            <h3>¡Casi listo! Cuéntame cómo contactarte</h3>
+            <p class="step-subtitle">Recibirás la confirmación en tu correo</p>
+            <div class="contact-fields">
+              <div class="field-group">
+                <label>Nombre completo</label>
+                <input type="text" name="nombre" placeholder="Ej. María García" required />
+              </div>
+              <div class="field-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="tu@email.com" required />
+              </div>
+              <div class="field-group">
+                <label>Teléfono</label>
+                <input type="tel" name="telefono" placeholder="+34 600 000 000" />
+              </div>
+            </div>
+            <p class="form-privacy">Al enviar este formulario aceptas nuestra <a href="#">política de privacidad</a>. Tus datos están seguros y nunca los compartiremos con terceros.</p>
+          </div>
+
+          <!-- SUCCESS -->
+          <div class="form-success" id="formSuccess" style="display:none;">
+            <div class="success-icon">✓</div>
+            <h3>¡Solicitud enviada con éxito!</h3>
+            <p>Me pondré en contacto contigo en menos de 24 horas para confirmar tu asesoría gratuita. ¡Estoy deseando conocerte!</p>
+          </div>
+
+          <div class="form-nav">
+            <button type="button" class="btn btn-outline" id="prevBtn" style="display:none;">← Anterior</button>
+            <button type="button" class="btn btn-primary" id="nextBtn">Siguiente →</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">
+          <span class="logo-icon">AF</span>
+          <span class="logo-text">Ali<strong>Finanzas</strong></span>
+        </a>
+        <p>Asesoría financiera personalizada para que tu dinero trabaje para ti. Disponible en español y alemán.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#formulario">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <ul>
+          <li>📧 info@alifinanzas.es</li>
+          <li>📞 +34 600 123 456</li>
+          <li>📍 Madrid, España</li>
+          <li>🕐 Lun – Vie: 9:00 – 18:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2026 Ali Finanzas · Ali Martínez. Todos los derechos reservados.</span>
+        <div class="footer-legal">
+          <a href="#">Aviso legal</a>
+          <a href="#">Política de privacidad</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
