@@ -1665,6 +1665,12 @@ input, textarea { font-family: inherit; }
     padding-bottom: 20px;
   }
 
+  .hero-content {
+    min-height: calc(100vh - 260px);
+    display: flex;
+    flex-direction: column;
+  }
+
   .hero-title {
     font-size: 1.9rem;
     text-shadow: 0 2px 16px rgba(0,0,0,0.8);
@@ -1678,6 +1684,11 @@ input, textarea { font-family: inherit; }
   .hero-badge {
     font-size: 0.72rem;
     padding: 6px 12px;
+  }
+
+  .hero-cta-group {
+    margin-top: auto;
+    padding-bottom: 8px;
   }
 
   .hero-stats-bar {
