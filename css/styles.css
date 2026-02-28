@@ -8,6 +8,7 @@
   --primary-dark:  #0F2419;
   --accent:        #52B788;
   --accent-hover:  #40916C;
+  --mint-premium:  #7DCCA9;
   --gold:          #D4AF37;
   --white:         #FFFFFF;
   --off-white:     #F8FAF5;
@@ -573,14 +574,14 @@ input, textarea { font-family: inherit; }
 .pain-icon {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(212, 175, 55, 0.05));
-  border: 1px solid rgba(212, 175, 55, 0.3);
-  border-radius: 16px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  color: #D4AF37;
+  color: var(--mint-premium);
   transition: var(--transition);
 }
 
@@ -590,8 +591,8 @@ input, textarea { font-family: inherit; }
 }
 
 .pain-card:hover .pain-icon {
-  background: linear-gradient(135deg, rgba(212, 175, 55, 0.25), rgba(212, 175, 55, 0.1));
-  border-color: rgba(212, 175, 55, 0.6);
+  color: #8BE0BA;
+  transform: translateY(-1px);
 }
 
 .pain-card h3 {
