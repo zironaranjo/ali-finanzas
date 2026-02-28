@@ -918,16 +918,17 @@ input, textarea { font-family: inherit; }
 
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, minmax(240px, 320px));
+  justify-content: center;
   gap: 20px;
 }
 
 .video-card {
   border-radius: var(--radius);
   overflow: hidden;
-  cursor: pointer;
   transition: var(--transition);
   border: 1px solid rgba(212, 175, 55, 0.15);
+  background: rgba(255, 255, 255, 0.03);
 }
 
 .video-card:hover {
@@ -979,12 +980,20 @@ input, textarea { font-family: inherit; }
 }
 
 .video-name {
-  position: relative;
-  z-index: 1;
+  display: block;
+  padding: 10px 12px 12px;
   color: rgba(255,255,255,0.85);
   font-weight: 600;
   font-size: 0.88rem;
   letter-spacing: 0.03em;
+}
+
+.video-player {
+  width: 100%;
+  aspect-ratio: 9/16;
+  object-fit: cover;
+  display: block;
+  background: #000;
 }
 
 /* =============================================
