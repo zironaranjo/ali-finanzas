@@ -1659,14 +1659,17 @@ input, textarea { font-family: inherit; }
 
   .hero-container {
     padding-top: 110px;
-    padding-bottom: 20px;
+    padding-bottom: 0;
   }
 
   .hero-content {
-    max-width: 68%;
+    max-width: 100%;
     min-height: calc(100vh - 260px);
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
   }
 
   .hero-title {
@@ -1676,9 +1679,10 @@ input, textarea { font-family: inherit; }
 
   .hero-subtitle {
     font-size: 0.95rem;
-    margin-top: auto;
+    margin-top: 10px;
     margin-bottom: 10px;
     text-shadow: 0 1px 10px rgba(0,0,0,0.7);
+    max-width: 92%;
   }
 
   .hero-badge {
@@ -1688,7 +1692,8 @@ input, textarea { font-family: inherit; }
 
   .hero-cta-group {
     margin-top: 0;
-    padding-bottom: 16px;
+    padding-bottom: 0;
+    justify-content: center;
   }
 
   .hero-stats-bar {
@@ -1786,4 +1791,54 @@ input, textarea { font-family: inherit; }
     min-width: calc(84vw);
     padding: 20px 18px;
   }
+}
+
+/* Ajuste fino para Samsung Galaxy A54 (portrait) */
+@media (min-width: 360px) and (max-width: 430px) and (min-height: 780px) and (orientation: portrait) {
+  .hero-bg-img {
+    object-position: 56% center;
+  }
+
+  .hero-container {
+    padding-top: 118px;
+    padding-bottom: 0;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    min-height: calc(100vh - 250px);
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+    line-height: 1.14;
+    margin-bottom: 14px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.92rem;
+    line-height: 1.52;
+    margin-bottom: 10px;
+    max-width: 92%;
+  }
+
+  .hero-cta-group {
+    padding-bottom: 0;
+    justify-content: center;
+  }
+
+  .hero-cta-group .btn-large {
+    padding: 14px 22px;
+    font-size: 0.95rem;
+  }
+
+  .hero-stats-bar {
+    padding: 14px 0;
+  }
+
+  .stat-number { font-size: 1.35rem; }
+  .stat-label  { font-size: 0.62rem; }
 }
