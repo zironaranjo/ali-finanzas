@@ -1650,13 +1650,17 @@ input, textarea { font-family: inherit; }
 }
 
 @media (max-width: 768px) {
+  .hero-bg-img {
+    object-position: 72% center;
+  }
+
   /* Hero mobile: overlay oscuro para legibilidad */
   .hero-overlay {
     background: linear-gradient(
-      to bottom,
-      rgba(8, 20, 14, 0.72) 0%,
-      rgba(8, 20, 14, 0.60) 60%,
-      rgba(8, 20, 14, 0.50) 100%
+      100deg,
+      rgba(8, 20, 14, 0.80) 0%,
+      rgba(8, 20, 14, 0.62) 46%,
+      rgba(8, 20, 14, 0.28) 100%
     );
   }
 
@@ -1666,6 +1670,7 @@ input, textarea { font-family: inherit; }
   }
 
   .hero-content {
+    max-width: 68%;
     min-height: calc(100vh - 260px);
     display: flex;
     flex-direction: column;
@@ -1742,7 +1747,12 @@ input, textarea { font-family: inherit; }
   }
 
   .testimonial-card {
-    min-width: calc(85vw);
+    min-width: calc(78vw);
+    padding: 24px 20px;
+  }
+
+  .testimonials-track {
+    gap: 16px;
   }
 
   .video-grid {
@@ -1777,5 +1787,8 @@ input, textarea { font-family: inherit; }
   .hero-stats { gap: 16px; }
   .stat-divider { width: 40px; height: 1px; }
   .stat-number { font-size: 1.5rem; }
-  .testimonial-card { min-width: calc(92vw); }
+  .testimonial-card {
+    min-width: calc(84vw);
+    padding: 20px 18px;
+  }
 }
