@@ -101,6 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const prevBtn  = document.getElementById('testimPrev');
   const nextBtn  = document.getElementById('testimNext');
   const dotsWrap = document.getElementById('testimDots');
+  const controls = document.querySelector('.testimonials-controls');
 
   if (track) {
     const cards        = track.querySelectorAll('.testimonial-card');
@@ -116,6 +117,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const totalSlides = () => Math.max(0, totalCards - getVisible());
 
+    function getCardStep() {
+      const card = cards[0];
+      const style = window.getComputedStyle(track);
+      const gap = parseFloat(style.columnGap || style.gap || 0);
+      return card.getBoundingClientRect().width + gap;
+    }
+
+    function updateControlsVisibility() {
+      const hasSlides = totalSlides() > 0;
+      if (controls) controls.style.display = hasSlides ? 'flex' : 'none';
+      if (dotsWrap) dotsWrap.style.display = hasSlides ? 'flex' : 'none';
+    }
+
     function createDots() {
       dotsWrap.innerHTML = '';
       const n = totalSlides() + 1;
@@ -126,22 +140,29 @@ document.addEventListener('DOMContentLoaded', () => {
         dot.addEventListener('click', () => goTo(i));
         dotsWrap.appendChild(dot);
       }
+      updateControlsVisibility();
     }
 
     function goTo(index) {
       current = Math.max(0, Math.min(index, totalSlides()));
-      const cardWidth = cards[0].offsetWidth + 24;
-      track.style.transform = `translateX(-${current * cardWidth}px)`;
+      track.style.transform = `translateX(-${current * getCardStep()}px)`;
       dotsWrap.querySelectorAll('.dot').forEach((d, i) => {
         d.classList.toggle('active', i === current);
       });
     }
 
-    function next() { goTo(current < totalSlides() ? current + 1 : 0); }
-    function prev() { goTo(current > 0 ? current - 1 : totalSlides()); }
+    function next() {
+      if (totalSlides() <= 0) return;
+      goTo(current < totalSlides() ? current + 1 : 0);
+    }
+    function prev() {
+      if (totalSlides() <= 0) return;
+      goTo(current > 0 ? current - 1 : totalSlides());
+    }
 
     function startAuto() {
       stopAuto();
+      if (totalSlides() <= 0) return;
       autoInterval = setInterval(next, 4500);
     }
 
@@ -166,7 +187,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if (Math.abs(diff) > 50) diff > 0 ? next() : prev();
     });
 
-    window.addEventListener('resize', () => { createDots(); goTo(0); });
+    window.addEventListener('resize', () => {
+      createDots();
+      goTo(0);
+      updateControlsVisibility();
+    });
   }
 
   /* ------------------------------------------
